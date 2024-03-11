@@ -1,6 +1,9 @@
 import React from "react";
 import "./App.css";
 import styled from "styled-components";
+import { StyledBtn, SuperBtn } from "./components/Button.styled";
+import { Link } from "./components/link.styled";
+import { Menu } from "./components/Menu";
 
 function App() {
   return (
@@ -34,37 +37,6 @@ function App() {
 
 export default App;
 
-const StyledBtn = styled.button`
-  border: none;
-  background-color: #fb3f78;
-  padding: 10px 20px;
-  color: snow;
-  font-size: 2rem;
-  font-weight: bold;
-
-  &:hover {
-    background-color: cornflowerblue;
-  }
-
-  &:last-child {
-    background-color: cyan;
-  }
-`;
-
-const Link = styled.a`
-  color: #275293;
-  font-size: 2rem;
-  font-weight: bold;
-  background-color: transparent;
-  padding: 0;
-`;
-
-const SuperBtn = styled(StyledBtn)`
-  border-radius: 5px;
-  background-color: #e0e04f;
-  color: black;
-`;
-
 const Box = styled.div`
   height: 100vh;
   display: flex;
@@ -78,20 +50,8 @@ const Box = styled.div`
   ${Link} {
     cursor: zoom-in;
   }
-`;
 
-export const Menu = styled.nav`
-  ul {
-    list-style: none;
-    //margin: 0;
-    padding: 0;
-    display: flex;
-    li > a {
-      color: green;
-    }
-
-    li + li {
-      margin-left: 20px;
-    }
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
   }
 `;
