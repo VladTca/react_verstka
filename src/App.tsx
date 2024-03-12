@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { StyledBtn, SuperBtn } from "./components/Button.styled";
 import { Link } from "./components/link.styled";
 import { Menu } from "./components/Menu";
+import { StyledBtnNew } from "./components/StyledBtnNew";
 
 function App() {
   return (
@@ -30,6 +31,16 @@ function App() {
         </StyledBtn>
         <StyledBtn>Hello</StyledBtn>
         <SuperBtn>Super Button</SuperBtn>
+        <StyledBtnNew color={"green"} fontSize={"20px"}>
+          Hello
+        </StyledBtnNew>
+        <StyledBtnNew color={"red"}>Hello</StyledBtnNew>
+        <StyledBtnNew fontSize={"30px"}>Hello</StyledBtnNew>
+        <StyledBtnNew primary>Hello</StyledBtnNew>
+        <StyledBtnNew outlined>Hello</StyledBtnNew>
+        {/*<StyledBtnNew btnType={"primary"}>Hello</StyledBtnNew>*/}
+        {/*<StyledBtnNew btnType={"outlined"}>Hello</StyledBtnNew>*/}
+        {/*  kak variant eshe dat atribut cherez typ*/}
       </Box>
     </div>
   );
