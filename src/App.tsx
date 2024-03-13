@@ -5,6 +5,7 @@ import { StyledBtn, SuperBtn } from "./components/Button.styled";
 import { Link } from "./components/link.styled";
 import { Menu } from "./components/Menu";
 import { StyledBtnNew } from "./components/StyledBtnNew";
+import { myTheme } from "./components/styles/Theme.styled";
 
 function App() {
   return (
@@ -36,8 +37,12 @@ function App() {
         </StyledBtnNew>
         <StyledBtnNew color={"red"}>Hello</StyledBtnNew>
         <StyledBtnNew fontSize={"30px"}>Hello</StyledBtnNew>
-        <StyledBtnNew primary>Hello</StyledBtnNew>
-        <StyledBtnNew outlined>Hello</StyledBtnNew>
+        <StyledBtnNew color={myTheme.colors.primary} primary>
+          Hello
+        </StyledBtnNew>
+        <StyledBtnNew color={myTheme.colors.secondary} outlined>
+          Hello
+        </StyledBtnNew>
         {/*<StyledBtnNew btnType={"primary"}>Hello</StyledBtnNew>*/}
         {/*<StyledBtnNew btnType={"outlined"}>Hello</StyledBtnNew>*/}
         {/*  kak variant eshe dat atribut cherez typ*/}
@@ -62,7 +67,7 @@ const Box = styled.div`
     cursor: zoom-in;
   }
 
-  @media screen and (max-width: 800px) {
+  @media ${myTheme.media.tablet} {
     flex-direction: column;
   }
 `;
