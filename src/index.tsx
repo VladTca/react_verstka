@@ -7,6 +7,7 @@ import { GlobalStyles } from "./components/styles/GlobalStyles";
 import { ThemeProvider } from "styled-components";
 import { myTheme } from "./components/styles/Theme.styled";
 
+//this is react18
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
 );

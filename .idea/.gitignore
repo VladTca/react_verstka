@@ -3,3 +3,7 @@
 /workspace.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+/codeStyles/codeStyleConfig.xml
+/jsLinters/eslint.xml
+/git_toolbox_prj.xml
+/prettier.xml
