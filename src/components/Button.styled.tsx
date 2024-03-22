@@ -14,7 +14,7 @@ export const StyledBtn = styled.button`
   }
 
   &:last-child {
-    background-color: cyan;
+    background-color: cadetblue;
   }
 `;
 export const SuperBtn = styled(StyledBtn)`
